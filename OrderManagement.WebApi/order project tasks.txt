@@ -1,0 +1,37 @@
+    //OrderItem
+    //Product - static
+    //Order - 1c, *p
+    //Customer - static
+
+    //UI Layer	- 
+
+    //Service Layer	- Entities
+
+    //Data Layer	- Entities
+
+
+1. pagination ------- PARTIALLY DONE(Missing: Mapping of querystring parameters)
+2. error handling
+3. caching
+4. logging
+5. security (auth/auth)
+6. whenever applicable, async & parallelization
+7. dependency injection / programming to interface ------- DONE
+8. performance considerations (db, service layer, UI)
+   - db: added customer index on Order table	---------- DONE
+   - service:pagination
+   - UI:
+9. scalability considerations
+10. Testing:
+    - unit testing (with mocking)
+    - perf testing
+    - load testing
+11. UI
+   - page responsiveness ... partially done(responsive table)
+   - usability
+12. design patterns
+13. enabling static code analysis
+
+
+3/12/2015 - Dep injection, EF
+3/14/2015 - pagination(service, UI),db index
