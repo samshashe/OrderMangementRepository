@@ -31,6 +31,7 @@
    - usability
 12. design patterns
 13. enabling static code analysis
+14. state management client side and server side (cookies, session)
 
 
 3/12/2015 - Dep injection, EF
