@@ -14,13 +14,10 @@ namespace OrderManagement.WebApi.Controllers
 
     public class OrderController : ApiController
     {
-        //private IOrderRepository orderRepository;
         private IOrderManagementEntities orderManagementContext;
 
-        // public OrderController(IOrderRepository orderRepository) // TODO
         public OrderController(IOrderManagementEntities orderManagementContext)
         {
-            //orderRepository = new OrderRepository();
             this.orderManagementContext = orderManagementContext;
         }
 
@@ -42,27 +39,5 @@ namespace OrderManagement.WebApi.Controllers
             
             return orders.ToList().Select(order => Mapper.Map<OrderViewModel>(order));
         }
-
-        //public OrderViewModel Get(int orderId)
-        //{
-        //    var customers = this.orderRepository.GetCustomers();
-        //    var orders = this.orderRepository.GetOrders()
-        //        .SingleOrDefault(order => order.OrderId == orderId);
-        //    // var orderItems = this.orderRepository.GetOrderItems();
-            
-        //    var query =
-        //        customers.Join(
-        //            orders,
-        //            customer => customer.CustomerId,
-        //            order => order.CustomerId,
-        //            (customer, order) =>
-        //            {
-        //                var orderViewModel = Mapper.Map<OrderViewModel>(order);
-        //                orderViewModel.CustomerName = customer.Name;
-        //                return orderViewModel;
-        //            });
-
-        //    return query;
-        //}
     }
 }

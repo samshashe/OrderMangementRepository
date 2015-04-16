@@ -14,13 +14,21 @@
 2. error handling
 3. caching
 4. logging
+   where:
+	- event log
+	- text file
+	- sql
+
+	what library:
+	- enterprise library
+	- log4net
 5. security (auth/auth)
 6. whenever applicable, async & parallelization
 7. dependency injection / programming to interface ------- DONE
 8. performance considerations (db, service layer, UI)
    - db: added customer index on Order table	---------- DONE
    - service:pagination
-   - UI:
+   - UI: bundling, minification, 
 9. scalability considerations
 10. Testing:
     - unit testing (with mocking)
@@ -32,7 +40,8 @@
 12. design patterns
 13. enabling static code analysis
 14. state management client side and server side (cookies, session)
-
+15. caching
+16. build/deploy considerations
 
 3/12/2015 - Dep injection, EF
 3/14/2015 - pagination(service, UI),db index

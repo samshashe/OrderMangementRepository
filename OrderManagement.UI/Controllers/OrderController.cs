@@ -10,8 +10,10 @@ namespace OrderManagement.UI.Controllers
     {
         //
         // GET: /Order/
+        [OrderManagement.UI.Filters.OrderManagementHandleError]
         public ActionResult Index()
         {
+            //throw new Exception("foo");
             return View();
         }
 	}

@@ -15,7 +15,7 @@ angular.module("app", []).controller("ordersController", function ($scope, $http
     };
 
     var getCurrentData = function() {
-        $http.get("http://sampower/OrderManagementApi/Api/Order?pageNumber=" + $scope.currentPage)
+        $http.get("http://sampower/OrderManagementWebApi/Api/Order?pageNumber=" + $scope.currentPage)
         .success(function (response) {
             $scope.orders = response;
         }).error(function (response, status, headers, config) {

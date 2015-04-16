@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using OrderManagement.UI.Filters;
+using System.Web;
 using System.Web.Mvc;
 
 namespace OrderManagement.UI
@@ -7,7 +8,8 @@ namespace OrderManagement.UI
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            // filters.Add(new HandleErrorAttribute());
+            filters.Add(new OrderManagementHandleErrorAttribute());
         }
     }
 }
